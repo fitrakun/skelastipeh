@@ -1,0 +1,26 @@
+{
+  "name": "proto-skelas-20170712-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -d --watch",
+    "build": "webpack -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "jquery": "^3.2.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.2.0"
+  },
+  "devDependencies": {
+    "url-loader": "^0.5.9"
+  }
+}
