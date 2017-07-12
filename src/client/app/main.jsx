@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import { Link } from 'react-router-dom';
 
 class Main extends React.Component {
   render () {
@@ -28,13 +29,13 @@ class Main extends React.Component {
           <div className="container">
             <div className="menunav-wrapper flexjustify-center flexdisplay-template flexhorizontal-template">
               <div className="menunav-list flexalign-stretch">
-                <a href className="active">Kelas</a>
+                <Link className="active" to='/Kelas'>Kelas</Link>
               </div>
               <div className="menunav-list flexalign-stretch">
-                <a href>Topik</a>
+                <Link to ='/Topik'>Topik</Link>
               </div>
               <div className="menunav-list flexalign-stretch">
-                <a href>Tes</a>
+                <Link to='/Tes'>Tes</Link>
               </div>
             </div>
           </div>
@@ -48,7 +49,7 @@ class Main extends React.Component {
                   <div className="cu-imagebox">
                     <img src="img/sample-1.jpg" />
                     <div className="cu-overlay">
-                      <div className="cu-titleclass"><a href>Skelas</a></div>
+                      <div className="cu-titleclass"><Link to='isikelas'>Skelas</Link></div>
                       <div className="cu-topicclass cu-string"><a className="ellipsis-mode" href>Fisika</a>, <a className="ellipsis-mode" href>Teknik Elektro</a>, <a className="ellipsis-mode" href>Biologi</a>, <a className="ellipsis-mode" href>Teknik Informatika</a></div>
                     </div>
                   </div>
@@ -62,10 +63,10 @@ class Main extends React.Component {
               </div>
               <div className="classuser-box flexjustify-start flexdisplay-template">
                 <div className="cu-shadowbox">
-                  <a className="newclass-box" href="tambah-kelas.php">
+                    <Link className="newclass-box" to='/TambahKelas'>
                     <div className="divlimiter"><i className="material-icons">add_circle_outline</i></div>
                     <div className="blocklabel-addclass flexjustify-center">Tambah Kelas</div>
-                  </a>
+                    </Link>
                 </div>
               </div>
             </div>

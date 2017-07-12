@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import { Link } from 'react-router-dom';
 
 class Footer extends React.Component {
   render () {
@@ -9,10 +10,10 @@ class Footer extends React.Component {
         <div id="side-nav-loggedin" className="sidenav-box">
           <div className="sn-menuitem">
             <ul id="side-nav-menuitem">
-              <li><a href>
+              <li><Link to='/Kelas'>
                   <span className="side-iconnav"><i className="material-icons">class</i></span>
                   <span className="side-iconnav">Kelas</span>
-                </a></li>
+                </Link></li>
               <li><a href>
                   <span className="side-iconnav"><i className="material-icons">style</i></span>
                   <span className="side-iconnav">Topik</span>
